@@ -74,11 +74,37 @@
 
             <p>Tem um projeto em mente? Entre em contato</p>
 
-            <address>
-                E-mail: <a href="mailto:cleber@cleber.com">cleber@cleber.com</a> <br>
-                Telefone: <a href="tel: +55 123 123 123">+55 123 123 123</a> <br>
+            <form action="">
 
-            </address>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" riquired> <br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mesagem" id="mensagem" cols="20" rows="5" required></textarea> <br>
+
+                <input type="checkbox" id="iscricao" name="inscricao">
+                <label for="incricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="bubmit" value="Enviar mensagem">
+                
+            </form>
 
         </section>
         

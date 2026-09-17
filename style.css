@@ -1,4 +1,26 @@
+/*Estilo para todo html*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+/*Estilo para o parágrafo*/
 p {
     color: blue;
+}
 
+/*Estilo para ......*/
+div {
+    heigth: 200px;
+    color: green;
+}
+
+/*Estilo para os links*/
+a {
+    display: inline-block;
+    background-color: rgb(168, 168, 168);
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    color: red;
 }

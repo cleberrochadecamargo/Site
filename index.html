@@ -1,157 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleber</title>
+    <head> <!--Configurações da página.-->
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visão da página..., ajustando a largura da página para a largura do dispositivo e definindo a escala inicial de zoom com 1.-->
+        <title>Meu Portifólio</title>
+        <link rel="stylesheet" href="style.css"> <!--Link para vinvular CSS--> 
 
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    </head>
 
-<body>
-    <header>
-        <h1>Cleber</h1>
-        <nav> <!--Seção de navegação do site.-->
-            <ul> <!--Lista não ordenada para links para o nosso menu.-->
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projeto">Projetos</a></li>
-                <li><a href="#contato">Contatos</a></li>
-                <li><a href="https://www.instagram.com/camargo_cleber/" target="_blank">Istagram</a></li>
-                <!--<li>sobre mim</li>-->
-            </ul> 
+    <body>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
         </nav>
-    </header>
+        
+        <section id="inicio" class="hero">
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
+            <p class="eyebrow">Engenharia • Dados • Programação</p>
 
-        <img src="Imagens/Minha foto.jpeg" 
-        alt="foto da imagem"
-        title="Imagem de perfil do Cleber"
-        alt="foto"
-        width="300">
-       
-        <article>
-            <p>
-                Olá eu sou o Cleber, sou desenvolvedor web.
+            <h1>Engenharia que evolui para <span>Dados</span>.</h1> <!--<span> permite aplicar uma formatação específica somente à palavra Dados.-->
+            
+            <p class="intro">
+                Sou Engenheiro Eletricista, com experiência na indústria e atuação em
+                ensaios, certificação, instrumentação e medições elétricas. Atualmente,
+                estou ampliando minha atuação profissional por meio da programação,
+                análise de dados, Power BI e inteligência artificial.
             </p>
-
-        </article>
-
-        <aside>
-
-            <h3>Habilidades</h3>
-
-            <ul>
-                <li>HTML</li>
-                <li>CCS</li>
-                <li>JavaScrip</li>
-            </ul>
-
-        </aside>
-
-    </section>
-
-    <section id="projeto">
-
-        <h2>Projetos</h2>
-
-        <article>
-            <h3>Portifolio</h3>
-
-            <p>
-                Este foi o primeiro site que desenvolvi, desnvolvendo front-end
-            </p>
-        </article>
-
-    </section>
-
-    <section id="habilidades">
-
-        <h2>Habilidades e Tecnologias</h2>
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Tecnologia</th>
-                    <th>Nível</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Iniciante</td>
-                    <td>Capaz de construir estruturas de páginas semânticas e responsivas.</td>
-                </tr>
-
-                <tr>
-                    <td>CSS</td>
-                    <td>Itermediário</td>
-                    <td>Experiência com flexbox, grid e animações CSS.</td>
-                </tr>
-
-                 <tr>
-                    <td>JavaScript</td>
-                    <td>Básico</td>
-                    <td>Desenvolvimento de script do lado do cliente para interações.</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-
-    </section>
-    
-    <footer>
-
-        <p>Direitos reservados a Cleber</p>
-
-        <section id="contato">
-
-            <h2>Contato</h2>
-
-            <p>Tem um projeto em mente? Entre em contato</p>
-
-            <form action="">
-
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" riquired> <br>
-
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" required> <br>
-
-                <label for="telefone">Telefone: </label>
-                <input type="tel" id="telefone" name="telefone"> <br>
-
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <br>
-
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mesagem" id="mensagem" cols="20" rows="5" required></textarea> <br>
-
-                <input type="checkbox" id="iscricao" name="inscricao">
-                <label for="incricao">Deseja receber minha newsletter? Fique por dentro.</label>
-
-                <br>
-
-                <input type="bubmit" value="Enviar mensagem">
-                
-            </form>
 
         </section>
-        
-    </footer>
 
-</body>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+
+            <p class="abaut-text">
+                Sou Engenheiro Eletricista, com uma trajetória construída na indústria,
+                atuando em ensaios, certificação, instrumentação e medições elétricas.
+                Ao longo dessa experiência, desenvolvi um perfil analítico e cuidadoso,
+                sempre buscando compreender problemas e transformar resultados em informação.
+            </p>
+
+            <p class="abaut-text">
+                Ao mesmo tempo, percebi que quero ampliar minha atuação profissional.
+                Por isso, venho estudando programação, Python, análise de dados, Power BI
+                e inteligência artificial, inclusive desenvolvendo projetos práticos.
+            </p>
+
+            <p class="abaut-text">
+                Hoje, procuro uma oportunidade em que eu possa combinar a experiência
+                técnica que construí ao longo dos anos com essas novas competências,
+                assumindo desafios maiores. Também estou trabalhando para ampliar meu
+                protagonismo, comunicar melhor meu conhecimento e assumir novos desafios.
+            </p>
+
+            <div class="about">
+                <div class="card">
+
+                    <h3>Minha trajetório</h3>
+                        <p>
+                            Ao longo da minha carreira, desenvolvi experiência técnica na indústria
+                            e em atividades de ensaios, certificações, intrumentação e medições elétricas.
+                        </p>
+
+                         <ul>
+                            <li>Engenharia Elétrica</li>
+                            <li>Experiência na indústria</li>
+                            <li>Ensaios e certificação</li>
+                            <li>Instrumentação e medições elétricas</li>
+                        </ul>
+                    
+                </div>
+
+                <div class="card">
+
+                    <h3>Meu próximo passo</h3>
+                        <p>
+                            Atualmente estou direcionando minha experiência técnica para programação,
+                            dados e inteligência artificial, desenvolvendo projetos práticos em
+                            Python e Data Science.
+                        </p>
+
+                        <ul>
+                            <li>Python</li>
+                            <li>Análise de dados</li>
+                            <li>Power BI</li>
+                            <li>Inteligência artificial</li>
+                            <li>Projetos práticos</li>
+                        </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <p class="intro">Tecnologias e conhecimentos que fazerm parte da minha evolução 
+                profissional.
+            </p>
+
+            <div class="skill-group">
+                <h3>Tecnologia e programação</h3>
+            
+                <div class="skills">
+                    <span class="tag">Python</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">VS Code</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Dados e BI</h3>
+            
+                <div class="skills">
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Data Science</span>
+                    <span class="tag">Machine Learning </span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">Inteligência Artificial</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Engenharia</h3>
+            
+                <div class="skills">
+                    <span class="tag">Instrumentações e medições elétricas</span>
+                    <span class="tag">Ensaios</span>
+                    <span class="tag">Certificação</span>                
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <article class="project">
+
+                <p class="projet_type">Python • Data Science</p>
+
+                <h3>Análise Exploratória de Dados - Hotel Booking</h3>
+
+                <p>
+                    Projeto de análise exploratória utilizando Python para investigar
+                    padrões, características das reservas e variáveis relacionadas ao
+                    cancelamento de reservas em hotéis.
+                </p>
+
+                <p class="project-detail">
+                    O projeto envolve exploração dos dados, tratamento das informações,
+                    análise das variáveis e criação de visualizações para identificar
+                    padrões relevantes no conjunto de dados.
+                </p>
+
+                <div class="project-tech">
+                    <span class="tag">Pyhton</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">EAD</span>
+                </div>
+                  
+                <a href="https://github.com/cleberrochadecamargo/Analise_Exploratoria_de_Dados_Hotel_Booking"
+                   target="_blank">
+                    Ver projeto no GitHub → 
+                </a>
+
+            </article>
+            
+        </section>
+
+        <section id="experiencia">
+            <h2>Currículo</h2>
+            <p>Minha experiência profissional e acadêmica</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>GitHub e LinkedIn</p>
+        </section>
+
+    </body>
+
 </html>

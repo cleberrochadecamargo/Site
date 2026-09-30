@@ -13,6 +13,34 @@ body {
     --white: #fff;
     }
 
+.hero {
+    padding: 80px 40px 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+    }
+
+.hero-photo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    border: 1px solid var(--line);   
+}
+
 .hero h1 {
     color: var(--text);
     font-size: clamp(36px, 5vw, 64px);
@@ -28,20 +56,6 @@ body {
     color: var(--muted);
     font-size: 18px;
     max-width: 700px;
-}
-
-.hero {
-    padding: 80px 40;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.eyebrow {
-    color: var(--accent);
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .about-text {
@@ -132,6 +146,14 @@ nav a:hover {
     margin: 20px 0;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: block;
+}
+
 .project a {
     display: inline-block;
     width: fit-content;
@@ -142,6 +164,14 @@ nav a:hover {
     padding: 10px 16px;
     border-radius: 8px;
     transition: 0.3s;
+}
+
+.github-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    filter: brightness(0) invert(1);
 }
 
 .project a:hover {
@@ -170,4 +200,32 @@ nav a:hover {
 .card li {
     margin-bottom: 8px;
     color: var(--muted);
+}
+
+.timeline {
+    border-left: 1px solid var(--line);
+    padding-left: 26px;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.periodo {
+    color: var(--accent);
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+@media (max-with: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .hero-photo img {
+        max-width: 300px;
+    }
 }

@@ -154,6 +154,24 @@ nav a:hover {
     display: block;
 }
 
+.linkedin-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+}
+
+.linkedin-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    filter: brightness(0) invert(1);
+}
+
 .project a {
     display: inline-block;
     width: fit-content;
@@ -166,17 +184,17 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.project a:hover {
+    background-color: var(--accent);
+    color: #07101f;
+}
+
 .github-icon {
     width: 18px;
     height: 18px;
     vertical-align: middle;
     margin-right: 6px;
     filter: brightness(0) invert(1);
-}
-
-.project a:hover {
-    background-color: var(--accent);
-    color: #07101f;
 }
 
 .about {
@@ -216,6 +234,29 @@ nav a:hover {
     color: var(--accent);
     font-weight: bold;
     margin: 0 0 8px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.contact-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 @media (max-with: 800px) {

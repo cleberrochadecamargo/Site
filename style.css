@@ -13,6 +13,10 @@ body {
     --white: #fff;
     }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     padding: 80px 40px 100px;
     display: grid;
@@ -27,6 +31,23 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 20px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: var(--accent);
+    color: var(--bg);
 }
 
 .hero-photo {
@@ -67,16 +88,21 @@ body {
 nav{
     position: sticky;
     top: 0;
-    z-index: 10px;
+    z-index: 1000;
     padding: 20px;
-    background-color: rgba(11, 16, 32, 0.95);
+    background-color: var(--bg);
     border-bottom: 1px solid var(--line);
+}
+
+section {
+    scroll-margin-top: 90px;
 }
 
 nav a {
     margin-right: 20px;
     color: var(--muted);
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -85,7 +111,7 @@ nav a:hover {
     text-decoration: none;
     transition: color 0.3s;
     border-color: var(--accent);
-    color: var(var(--accent));
+    color: var(--accent);
 }
 
 .skills {
@@ -186,7 +212,7 @@ nav a:hover {
 
 .project a:hover {
     background-color: var(--accent);
-    color: #07101f;
+    color: var(--bg);
 }
 
 .github-icon {

@@ -114,6 +114,10 @@ nav a:hover {
     color: var(--accent);
 }
 
+nav a.active {
+    color: var(--accent);
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -295,4 +299,32 @@ nav a:hover {
     .hero-photo img {
         max-width: 300px;
     }
+}
+
+#backToTop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+
+    background-color: var(--panel);
+    color: var(--accent);
+
+    font-size: 22px;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background-color: var(--accent);
+    color: var(--bg);
 }

@@ -1,6 +1,6 @@
 body {
     background-color: #0b1020;
-    color: #edf2ff
+    color: #edf2ff;
 }
 
 :root {
@@ -92,6 +92,10 @@ nav{
     padding: 20px;
     background-color: var(--bg);
     border-bottom: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;    
+
 }
 
 section {
@@ -99,19 +103,14 @@ section {
 }
 
 nav a {
-    margin-right: 20px;
+    margin-right: 0px;
     color: var(--muted);
     text-decoration: none;
     transition: 0.3s;
 }
 
 nav a:hover {
-    margin-right: 20px;
-    color: var(--accent);
-    text-decoration: none;
-    transition: color 0.3s;
-    border-color: var(--accent);
-    color: var(--accent);
+    color: var(--accent);  
 }
 
 nav a.active {
@@ -146,7 +145,7 @@ nav a.active {
     background-color: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
-    padding: 28px;
+    padding: 20px;
     margin-bottom: 0px;
     }
 
@@ -237,6 +236,7 @@ nav a.active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -295,7 +295,7 @@ nav a.active {
     color: var(--accent);
 }
 
-@media (max-with: 800px) {
+@media (max-width: 800px) {
     .hero {
         grid-template-columns: 1fr;
         padding: 50px 20px;
@@ -304,6 +304,18 @@ nav a.active {
 
     .hero-photo img {
         max-width: 300px;
+    }
+
+    nav {
+         padding: 16px;
+    }
+
+    nav a {
+        margin-right: 0;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
     }
 }
 
